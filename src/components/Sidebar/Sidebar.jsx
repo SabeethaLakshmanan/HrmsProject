@@ -60,7 +60,11 @@ const Sidebar = () => {
                   }`}
                 >
                   <div className="sidebar-icon-wrapper">
-                    {Icon && <Icon size={18} />}
+                     {typeof Icon === "string" ? (
+                     <img src={Icon} alt={item.label} width={18} height={18}/>
+                 ) : (
+                  Icon && <Icon size={18} />
+               )}
                   </div>
 
                   {!collapsed && (

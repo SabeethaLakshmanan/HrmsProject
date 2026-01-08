@@ -9,6 +9,10 @@
   flex-shrink: 0;
   width: 240px;
 }
+.sidebar-svg-icon {
+  width: 16px;
+  height: 16px;
+}
 
 .sidebar.collapsed {
   width: 56px;

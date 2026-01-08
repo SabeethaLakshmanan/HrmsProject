@@ -50,6 +50,12 @@ export const getMenuItems = async () => {
            icon: "leaves-outline",
            url: "/leaves",
          },
+         {
+       id: 5,
+       label: "Review",
+       icon: "review-outline",
+       url: "/review",
+        },
 
         {
             "id": 3,
