@@ -1,0 +1,276 @@
+.page-title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #0D121C;
+}
+
+.field-label {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #0D121C;
+  padding-bottom: 8px;
+}
+
+.add-employee-container {
+  padding: 24px 32px;
+   background: #ffffff; /* FULL WHITE like figma */
+  min-height: 100vh;
+   max-width: 1066px;
+  margin-left: 260px;
+}
+
+.sub-heading {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0D121C;
+  margin-bottom: 12px;
+}
+
+/* HEADER */
+.add-employee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24x;
+}
+
+.add-employee-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.breadcrumb img {
+  width: 12px;
+}
+
+.breadcrumb .active {
+  color: #0D121C;   /* black */
+  
+}
+
+.section-title {
+  width: 1066px;
+  height: 23px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #136DEC;
+  margin: 32px 0 16px;
+}
+
+.export-btn {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* CARD */
+.form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+/* SECTION */
+.section-title {
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 24px 0 16px;
+}
+
+/* FORM GRID */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+/* UPLOAD */
+.upload-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.upload-box {
+  border: 2px dashed #c7d2fe;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+}
+
+.upload-title {
+  font-weight: 600;
+}
+
+.upload-sub {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 6px 0 12px;
+}
+
+.upload-btn {
+  background: #2563eb;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: none;
+}
+
+.doc-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.doc-row input {
+  flex: 1;
+}
+
+.doc-row button {
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 12px;
+  border: none;
+}
+
+/* ACTIONS */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+.btn-secondary {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+.document-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.document-upload {
+  height: 64px;
+  border: 1px dashed #D1D5DB;
+  border-radius: 8px;
+  background: #F9FAFB;
+
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #0D121C;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.document-upload:hover {
+  border-color: #136DEC;
+  background: #EEF4FF;
+}
+/* DOCUMENTS – FIGMA EXACT */
+.doc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.doc-row-figma {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Dashed label box ONLY */
+.doc-label-box {
+  flex: 1;
+  height: 56px;
+  border: 1.5px dashed #D1D5DB;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;       /* ✅ NOT BOLD */
+  color: #0D121C;
+  background: #ffffff;
+}
+
+/* Upload button outside */
+.doc-upload-btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  height: 40px;
+}
+
+
