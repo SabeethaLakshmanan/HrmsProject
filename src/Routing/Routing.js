@@ -6,6 +6,7 @@ import Profile from "../pages/Settings/Profile/Profile";
 import Security from "../pages/Settings/Security/Security";
 import EmployeeList from "../pages/Employee/EmployeeList/EmployeeList";
 import AddEmployee from "../pages/Employee/AddEmployee/AddEmployee";
+import ProfileOverview from "../pages/Employee/ProfileOverview/ProfileOverview";
 
 const Routing = () => {
   return (
@@ -20,6 +21,7 @@ const Routing = () => {
          <Route path="settings/security" element={<Security />} />
          <Route path="employees/list" element={<EmployeeList />} />
          <Route path="employees/add" element={<AddEmployee />} />
+         <Route path="employees/profile" element={<ProfileOverview />} />
         </Route>
       </Routes>
     </BrowserRouter>
