@@ -12,7 +12,9 @@ const AddEmployee = () => {
 
           <div className="breadcrumb">
           <img src={breadcrumbIcon} alt="breadcrumb" />
+          <span className="separator">/</span>
           <span>Employee Management</span>
+          <span className="separator">/</span>
           <span className="active">Add Employee</span>
         </div>
         </div>

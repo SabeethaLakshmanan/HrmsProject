@@ -7,6 +7,8 @@ import Security from "../pages/Settings/Security/Security";
 import EmployeeList from "../pages/Employee/EmployeeList/EmployeeList";
 import AddEmployee from "../pages/Employee/AddEmployee/AddEmployee";
 import ProfileOverview from "../pages/Employee/ProfileOverview/ProfileOverview";
+import EditEmployee from "../pages/Employee/EditEmployee/EditEmployee";
+import EmployeeDocuments from "../pages/Employee/Documents/EmployeeDocuments";
 
 const Routing = () => {
   return (
@@ -22,6 +24,8 @@ const Routing = () => {
          <Route path="employees/list" element={<EmployeeList />} />
          <Route path="employees/add" element={<AddEmployee />} />
          <Route path="employees/profile" element={<ProfileOverview />} />
+         <Route path="/employee/edit" element={<EditEmployee />} />
+          <Route path="/employees/documents/:id" element={<EmployeeDocuments />} />
         </Route>
       </Routes>
     </BrowserRouter>
