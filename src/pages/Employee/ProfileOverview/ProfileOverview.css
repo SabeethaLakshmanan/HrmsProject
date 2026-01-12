@@ -1,0 +1,186 @@
+.profile-container {
+  width: 1668px;
+  height: 1015px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f6fa; /* light grey background like Figma */
+  min-height: 100vh;
+}
+
+/* HEADER */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header-left h1.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.breadcrumb img {
+  margin-right: 8px;
+}
+
+.breadcrumb .separator {
+  margin: 0 5px;
+}
+.breadcrumb .active {
+  font-weight: 600;
+}
+
+
+/* PROFILE CARD */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-role {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.profile-meta {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* GRID */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+
+.tab {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  font-weight: 600;
+}
+
+/* INFO CARD */
+.info-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.info-row.full {
+  grid-template-columns: 1fr;
+}
+
+.info-label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.info-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0d121c;
+}
+
+/* SIDE CARDS */
+.side-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.side-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* BUTTONS */
+.full {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.btn-outline {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.confidential {
+  color: #16a34a;
+}
