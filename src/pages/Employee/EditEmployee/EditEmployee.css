@@ -1,0 +1,243 @@
+.edit-page {
+    
+  width: 100%;
+  background: #f8f9fa;
+  padding-bottom: 40px;
+}
+
+/* HEADER */
+.edit-header {
+    font-size: 14px; 
+  width: 92%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.breadcrumb img {
+  width: 14px;
+  margin-right: 6px;
+}
+
+.breadcrumb .sep {
+  margin: 0 6px;
+}
+
+.breadcrumb .active {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* PROFILE */
+.employee-summary {
+  width: 92%;
+  margin: 24px auto;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.employee-summary img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.summary-text h4 {
+  font-size: 18px;       /* smaller – Figma accurate */
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.emp-id {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* CARD */
+.edit-card {
+  width: 92%;
+  background-color: #ffffff;
+  margin: 24px auto;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.edit-card .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* FORM */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 24px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.disabled-label {
+  color: #9ca3af;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.disabled-input {
+  background: #f3f4f6;
+  color: #9ca3af;
+}
+
+/* DOCUMENTS */
+.document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.doc-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;              /* 👈 space like Figma */
+  background: #eff6ff;
+  color: #2563eb;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.upload-icon {
+  width: 14px;
+  height: 14px;
+}
+.doc-btn svg {
+  font-size: 12px;
+}
+
+/* BUTTONS */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #2563eb;
+  padding: 12px 28px;
+  border-radius: 8px;
+}
+
+.edit-icon {
+  font-size: 14px;     /* Figma-like */
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.edit-icon:hover {
+  color: #1d4ed8;
+}
+.export-btn {
+  width: 116.34px;
+  height: 47px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 8px;
+  padding-bottom: 8px;
+
+  background: transparent;
+  border: none;
+}
+.export-btn {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+
+  width: 108.34px;
+  height: 39px;
+
+  padding: 8px 13.6px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+
+  cursor: pointer;
+}
+
+.export-btn img {
+  width: 14px;
+  height: 14px;
+}
+.export-btn:hover {
+  background: #f9fafb;
+}

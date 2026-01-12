@@ -1,0 +1,166 @@
+.documents-page {
+  padding: 24px;
+  background: #f8f9fb;
+}
+
+/* HEADER */
+.documents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.documents-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.export-btn {
+  padding: 8px 14px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* UPLOAD */
+.upload-area {
+  border: 2px dashed #c7d2fe;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.upload-title {
+  font-weight: 600;
+}
+
+.upload-title span {
+  color: #2563eb;
+}
+
+.upload-sub {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 6px 0 20px;
+}
+
+.upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* CONTENT */
+.documents-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* TABLE CARD */
+.documents-table-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.documents-table-card h3 {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #0f4fa8;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  font-size: 13px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.status.verified {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.status.pending {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.actions svg {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.actions svg:nth-child(1) {
+  color: #2563eb;
+}
+.actions svg:nth-child(2) {
+  color: #16a34a;
+}
+.actions svg:nth-child(3) {
+  color: #ef4444;
+}
+
+/* REQUIRED DOCS */
+.required-docs-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.required-docs-card h3 {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.required-docs-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.required-docs-card li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.completed {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.pending {
+  color: #f59e0b;
+  font-weight: 600;
+}
