@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "./EmployeeList.css";
+import { useNavigate } from "react-router-dom";
 import {
   fetchEmployeeList,
   fetchDepartments,
@@ -37,6 +38,7 @@ export default function EmployeeList() {
   const [departmentOptions, setDepartmentOptions] = useState([]);
   const [roleOptions, setRoleOptions] = useState([]);
   const [statusOptions, setStatusOptions] = useState([]);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     fetchEmployeeList().then(setEmployees);
@@ -213,7 +215,10 @@ useEffect(() => {
                   </td>
                   <td className="text-center">
                     <div className="action-icons">
-                      <FiEye />
+                      <FiEye
+      style={{ cursor: "pointer" }}
+      onClick={() => navigate("/employees/profile")}
+    />
                       <FiEdit />
                       <FiTrash2 />
                     </div>
