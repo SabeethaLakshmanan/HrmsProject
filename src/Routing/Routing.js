@@ -9,6 +9,7 @@ import AddEmployee from "../pages/Employee/AddEmployee/AddEmployee";
 import ProfileOverview from "../pages/Employee/ProfileOverview/ProfileOverview";
 import EditEmployee from "../pages/Employee/EditEmployee/EditEmployee";
 import EmployeeDocuments from "../pages/Employee/Documents/EmployeeDocuments";
+import StatusHistory from "../pages/Employee/StatusHistory/StatusHistory";
 
 const Routing = () => {
   return (
@@ -26,6 +27,7 @@ const Routing = () => {
          <Route path="employees/profile" element={<ProfileOverview />} />
          <Route path="/employee/edit" element={<EditEmployee />} />
           <Route path="/employees/documents/:id" element={<EmployeeDocuments />} />
+          <Route path="employees/status-history" element={<StatusHistory />} />
         </Route>
       </Routes>
     </BrowserRouter>
