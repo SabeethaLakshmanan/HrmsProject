@@ -2,7 +2,7 @@ import "./EditEmployee.css";
 import avatar from "../../../assets/image/avatar.png";
 import breadcrumbIcon from "../../../assets/image/EmployeeList/breadcrumbIcon.png";
 import editIcon from "../../../assets/image/EmployeeList/edit.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { FiEdit2 } from "react-icons/fi";
 import exportIcon from "../../../assets/image/EmployeeList/exportIcon.svg";
 import uploadIcon from "../../../assets/image/EmployeeList/typcn_upload.png";
@@ -10,6 +10,7 @@ import uploadIcon from "../../../assets/image/EmployeeList/typcn_upload.png";
 
 const EditEmployee = () => {
   const navigate = useNavigate();
+   const { id = "EMP_12547" } = useParams();
 
   return (
     <div className="edit-page">
@@ -109,7 +110,11 @@ const EditEmployee = () => {
 
           <div>
             <label className="disabled-label">Employee ID</label>
-            <input value="EMP_12547" disabled className="disabled-input" />
+            <input
+              defaultValue={id}
+              readOnly
+              className="readonly-input"
+            />
           </div>
 
           <div>
@@ -134,7 +139,7 @@ const EditEmployee = () => {
 
           <div>
             <label>Emergency Contact Number</label>
-            <input value="+91 98521 07800" />
+            <input defaultValue="+91 98521 07800" />
           </div>
 
           <div className="full-width">
@@ -148,31 +153,25 @@ const EditEmployee = () => {
       <div className="edit-card">
         <div className="card-header">
           <div className="card-title">Document Management</div>
-          <FiEdit2 className="edit-icon" />
+          <FiEdit2 
+          className="edit-icon" />
         </div>
 
-        <div className="document-list">
-          <div className="document-item">
-            <span>Resume.pdf</span>
-            <button className="doc-btn">
-                <img src={uploadIcon} alt="upload" className="upload-icon" />
-                Update
+          <div className="document-list">
+          {["Resume.pdf", "ID_Proof.pdf", "Offer-Letter-Signed.pdf"].map(
+            (doc, i) => (
+              <div className="document-item" key={i}>
+                <span>{doc}</span>
+                <button
+                  className="doc-btn"
+                  onClick={() => navigate(`/employees/documents/${id}`)}
+                >
+                  <img src={uploadIcon} alt="upload" className="upload-icon" />
+                  Update
                 </button>
-          </div>
-          <div className="document-item">
-            <span>ID_Proof.pdf</span>
-            <button className="doc-btn">
-                <img src={uploadIcon} alt="upload" className="upload-icon" />
-                Update
-                </button>
-          </div>
-          <div className="document-item">
-            <span>Offer-Letter-Signed.pdf</span>
-            <button className="doc-btn">
-                <img src={uploadIcon} alt="upload" className="upload-icon" />
-                Update
-                </button>
-          </div>
+              </div>
+            )
+          )}
         </div>
       </div>
 
