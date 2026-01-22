@@ -1,0 +1,156 @@
+.status-details-page {
+  padding: 24px;
+  background: #ffffff;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+.status-header h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.breadcrumb span {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* CURRENT STATUS */
+.current-status {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.profile h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.profile p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.active-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.deactivate-btn {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* HISTORY */
+.history-title {
+  margin: 28px 0 16px;
+  font-size: 18px;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e5e7eb;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.timeline-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #e5e7eb;
+  z-index: 1;
+}
+
+.timeline-icon.gold {
+  color: #f59e0b;
+}
+
+.timeline-icon.blue {
+  color: #2563eb;
+}
+
+.timeline-icon.dark {
+  color: #111827;
+}
+
+.timeline-icon.green {
+  color: #16a34a;
+}
+
+.timeline-card {
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  padding: 16px 18px;
+  width: 100%;
+}
+
+.timeline-card .date {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.timeline-card h4 {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.timeline-card p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 14px;
+}
