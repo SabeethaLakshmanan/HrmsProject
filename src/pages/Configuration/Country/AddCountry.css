@@ -1,0 +1,104 @@
+.add-country-page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-top: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+.add-country-card {
+  width: 457px;
+  background: #fff;
+}
+.add-country-divider {
+  width: 425px;
+  height: 0;
+  border-top: 1px solid #A1A1A1;
+  margin: 16px 0 24px;
+}
+.add-country-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.add-country-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #174ea6;
+  margin: 0;
+}
+
+.close-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: #174ea6;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #cfd6e8;
+  margin: 16px 0 24px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  height: 56px;
+  border-radius: 18px;
+  border: 1px solid #a0a0a0;
+  padding: 0 18px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+/* FOOTER */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn-cancel {
+  height: 48px;
+  padding: 0 32px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #a0a0a0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  height: 48px;
+  padding: 0 32px;
+  border-radius: 10px;
+  background: #174ea6;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}

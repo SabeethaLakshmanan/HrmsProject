@@ -1,0 +1,37 @@
+.add-state-page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.add-state-card {
+  width: 457px;
+  height: 1089px;
+}
+
+.add-state-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-state-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #174ea6;
+}
+
+.close-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: #174ea6;
+}
+
+.add-state-divider {
+  width: 425px;
+  border-top: 1px solid #a1a1a1;
+  margin: 16px 0 28px;
+}
