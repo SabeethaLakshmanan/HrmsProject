@@ -1,0 +1,174 @@
+.punch-container {
+  padding: 24px;
+  background: #f9fafc;
+}
+
+.punch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.punch-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #8a8fa3;
+}
+.breadcrumb img {
+  width: 14px;
+  height: 14px;
+}
+.breadcrumb .separator {
+  margin: 0 4px;
+}
+
+.breadcrumb .active {
+  color: #111827;
+  font-weight: 500;
+}
+.export-btn {
+  background: white;
+  border: 1px solid #d6dbea;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Filters */
+.filter-row {
+  margin: 20px 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.filter-row select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d6dbea;
+  background: white;
+}
+
+.search-box {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: white;
+  border: 1px solid #d6dbea;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+}
+
+/* Table */
+.table-wrapper {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e2e6f3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #144aa8;
+  color: white;
+  
+}
+
+th, td {
+  padding: 14px;
+  font-size: 14px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #edf0f7;
+}
+
+
+.status.present {
+  background: #0bb14b;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.actions {
+  color: #7a7f96;
+  cursor: pointer;
+}
+.table-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.pagination button {
+  border: 1px solid #d6dbea;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #144aa8;
+  color: white;
+}
+.table-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+/* PAGINATION – FIGMA STYLE */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d6dbea;
+  background: #ffffff;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background: #eef2ff;
+}
+
+.pagination .active {
+  background: #144aa8;
+  color: #ffffff;
+  border-color: #144aa8;
+}
